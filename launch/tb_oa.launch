@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch"/>
+  <node name="turtlebot3_obstacle_avoidance" pkg="ros_oa" type="OA" output="screen"/>
+  <node pkg="rosbag" type="record" name="my_rosbag" output="screen" args="-O $(find ros_oa)/results/ros_bag_pub_sub.bag --duration=15 -a -x '(.*)/camera(.*)' " if="$(arg record)"/>
+</launch>
