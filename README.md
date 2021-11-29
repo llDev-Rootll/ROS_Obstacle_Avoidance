@@ -1,4 +1,5 @@
 
+  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   
@@ -45,8 +46,15 @@ In the results directory run the following command to inspect the rosbag:
     rosbag info ros_bag_pub_sub.bag
 ## Seeing the rosbag replay in action
 With the gazebo not running and a roscore running , run the following command to play the recorded rosbag:
+	In a terminal run : 
 
-     rosbag play ros_bag_pub_sub.bag
+     source source ..<path_to_ws>/devel/setup.bash
+     rosrun ros_oa OA
+   In another terminal run
+   
+
+    rosbag info ros_bag_pub_sub.bag
+The corresponding velocity commands can be then seen on the terminal to demosntrate the behaviour.
 
 ## Running cpplint & cppcheck tests
 Run the following command in the root directory to generate cpplint results in **results** folder
@@ -55,6 +63,3 @@ Run the following command in the root directory to generate cpplint results in *
 Run the following command in the root directory to generate cppcheck results in **results** folder
 
     sh run_cppcheck.sh
-
-  
-

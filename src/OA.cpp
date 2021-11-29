@@ -72,6 +72,8 @@ void Listener::scanCallback(const sensor_msgs::LaserScan::ConstPtr& msg) {
         }
       }
   }
+
+  std::cout << "Command Velocity:" << cmd_velocity << std::endl;
 }
 /**
  * @brief main function which creates a node handles 
