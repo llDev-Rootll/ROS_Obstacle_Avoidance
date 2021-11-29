@@ -41,6 +41,7 @@ class Listener {
       * 
       */
      int count;
+
  private:
      /**
       * @brief ros node handle
@@ -65,4 +66,4 @@ class Listener {
      void scanCallback(const sensor_msgs::LaserScan::ConstPtr& msg);
      float threshold;
 };
-#endif  // OA_H_
+#endif  // INCLUDE_OA_H_
