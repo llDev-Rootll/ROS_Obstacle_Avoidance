@@ -53,7 +53,7 @@ With the gazebo not running and a roscore running , run the following command to
    In another terminal run
    
 
-    rosbag info ros_bag_pub_sub.bag
+    rosbag play ros_bag_pub_sub.bag
 The corresponding velocity commands can be then seen on the terminal to demosntrate the behaviour.
 
 ## Running cpplint & cppcheck tests
